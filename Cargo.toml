@@ -1,0 +1,24 @@
+[package]
+name = "headercheck"
+version = "0.1.0"
+edition = "2021"
+description = "Ensures every source file has the correct license/copyright header, and can insert the missing one — distinct from this workspace's licenselint, which audits dependency licenses, not your own files"
+license = "MIT"
+authors = ["Animesh Raj <animesh080808@gmail.com>"]
+repository = "https://github.com/itsarraj/headercheck"
+readme = "README.md"
+keywords = ["license", "copyright", "header", "cli", "lint"]
+categories = ["command-line-utilities"]
+
+[lib]
+name = "headercheck"
+path = "src/lib.rs"
+
+[[bin]]
+name = "headercheck"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+anyhow = "1"
+chrono = "0.4"
