@@ -8,6 +8,12 @@ audits **your own source files** — the "every file needs a copyright
 banner" policy some companies and OSS projects enforce, usually checked
 today with a hand-rolled shell script or not checked at all.
 
+## Installation
+
+```sh
+cargo install --path .
+```
+
 ## Usage
 
 ```bash
